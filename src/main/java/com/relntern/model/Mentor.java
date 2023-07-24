@@ -23,7 +23,8 @@ public class Mentor {
 	private int mentorid; 
 	private String mentorname;
 	private String mentoremail;
-	private String mentorpass;
+	private String projectstatus;
+	
 	private String project;
 	private String Role;
 	private String Association; 
@@ -62,12 +63,14 @@ public class Mentor {
 	public void setMentoremail(String mentoremail) {
 		this.mentoremail = mentoremail;
 	}
-	public String getMentorpass() {
-		return mentorpass;
+	
+	public String getProjectstatus() {
+		return projectstatus;
 	}
-	public void setMentorpass(String mentorpass) {
-		this.mentorpass = mentorpass;
+	public void setProjectstatus(String projectstatus) {
+		this.projectstatus = projectstatus;
 	}
+	
 	public String getProject() {
 		return project;
 	}

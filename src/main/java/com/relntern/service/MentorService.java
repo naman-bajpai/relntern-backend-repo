@@ -20,4 +20,8 @@ public class MentorService {
 		return (List<Mentor>)mentorRepository.findAll();
 	}
 	
+	public void deleteMentor(Integer mentorid) {
+		mentorRepository.deleteById(mentorid);
+	}
+	
 }
