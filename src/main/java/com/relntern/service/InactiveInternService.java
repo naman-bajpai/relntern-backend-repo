@@ -3,6 +3,7 @@ package com.relntern.service;
 import java.util.List;
 
 
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -22,6 +23,10 @@ public class InactiveInternService {
 	
 	public void deleteInactiveIntern(Integer id) {
 		inactiveInternRepository.deleteById(id);
+	}
+	
+	public InactiveIntern getInternById(int id) {
+		return inactiveInternRepository.findById(id).get();
 	}
 	
 }
